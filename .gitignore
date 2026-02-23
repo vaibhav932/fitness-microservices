@@ -11,7 +11,7 @@ build/
 **/*.jks
 **/*.p12
 **/*.pem
-certs
+backend/certs
 
 # IDE Settings
 .idea/
