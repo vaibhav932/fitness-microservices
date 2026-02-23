@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Build Outputs
+**/target/
+dist/
+build/
+
+# Secrets and Local Config
+.env
+**/*.jks
+**/*.p12
+**/*.pem
+certs
+
+# IDE Settings
+.idea/
+*.iml
+.vscode/
+.project
+.classpath
+.settings/
+
+# System Files
+.DS_Store
+Thumbs.db

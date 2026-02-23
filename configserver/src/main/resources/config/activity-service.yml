@@ -1,0 +1,35 @@
+spring:
+  mongodb:
+    uri: ${MONGODB_URI}
+#    uri: "mongodb+srv://shandilyavaibhav28:vaibhav1@aiactivityfitness.cs8qsye.mongodb.net/aiactivityfitness?retryWrites=true&w=majority&appName=aiactivityfitness"
+  kafka:
+    bootstrap-servers: kafka-39123c4a-shandilyavaibhav28-6213.c.aivencloud.com:27665
+    properties:
+      security.protocol: SSL
+      ssl.truststore.location: E:\Dev\microservices\fitness-microservices\certs\truststore.jks
+      ssl.truststore.password: password123
+      ssl.keystore.location: E:\Dev\microservices\fitness-microservices\certs\keystore.jks
+      ssl.keystore.password: password123
+      ssl.key.password: password123
+      # Optional: Disable hostname verification if you get SSL handshake errors
+      ssl.endpoint.identification.algorithm: ""
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+#      properties:
+#        spring.json.add.type.headers: false
+
+kafka:
+  topic:
+    name: activity-events
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+server:
+  port: 8082
+
+
+
