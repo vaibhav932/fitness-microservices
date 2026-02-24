@@ -6,9 +6,9 @@ spring:
     bootstrap-servers: kafka-39123c4a-shandilyavaibhav28-6213.c.aivencloud.com:27665
     properties:
       security.protocol: SSL
-      ssl.truststore.location: E:\Dev\microservices\fitness-microservices\certs\truststore.jks
+      ssl.truststore.location: E:\Dev\microservices\fitness-microservices\backend\certs\truststore.jks
       ssl.truststore.password: password123
-      ssl.keystore.location: E:\Dev\microservices\fitness-microservices\certs\keystore.jks
+      ssl.keystore.location: E:\Dev\microservices\fitness-microservices\backend\certs\keystore.jks
       ssl.keystore.password: password123
       ssl.key.password: password123
       # Optional: Disable hostname verification if you get SSL handshake errors
